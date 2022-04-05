@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5EEDC; 
+}
+
+.projeto{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    /* border: 1px solid red; */
+    
+    
+}
+
+.topo .logo{
+    position: relative;
+    width: 10rem;
+    height: 8rem;
+    left: -200px; 
+    top: -5px; 
+}
+
+input.barrapesquisa{ 
+    position: absolute;
+    top: 50px;
+    left: -250px;
+    width: 30rem;
+    height: 2rem; 
+    background-color: #ECB390;
+    border: none;
+    position: relative;
+    
+
+}
+
+.topo .cep{
+    position: relative;
+    top: 120px;
+    right: 340px;
+}
+
+.topo .btbuscar{
+    position: relative;
+    left: -230px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    background-color: #ECB390;
+    width: 6rem;
+    height: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.topo > .btlogin{
+    position: absolute;
+    right: 550px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C0D8C0;
+    width: 8rem;
+    height: 5rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.topo .carrinhoc{
+    /* background-color: #C0D8C0; */
+    position: absolute;
+    top: -22px;
+    left: 255px;
+    width: 5rem;
+    height: 7rem;
+    border-radius: px;
+}
+
+.topo .fav{
+    /* background-color: #C0D8C0; */
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    width: 130px;
+    height: 60px;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    transition: all 0.3 ease-out;
+}
+
+.vitrine:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+ .vitrine{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     max-height: 500px;
+     border-radius: 5px;
+     box-shadow: 7px 7px 13px 0;
+     padding: 20px;
+     margin: 100px;
+     background-color: #C0D8C0 ;
+ }
+ 
+ .vitrine > .img{
+     max-width: 300px;
+     max-height: 200px;
+     object-fit: cover;
+ }
+
+ .vitrine > .bt{
+     background-color: #ECB390;
+     position: relative;
+     top: 13px;
+     width: 10rem;
+     height: 3rem;
+     border-radius: 10rem;
+     border: none;
+     font-size: large;
+     font-weight: bold;
+ }
+
+ .ofertas{
+     position: relative;
+     left: 50px;
+     font-size: 50px;
+ }
+
+ .compras{
+     position: relative;
+     left: 50px;
+     font-size: 50px;
+ }
+ 
+ .carrinhos{
+    display: inline;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    transition: all 0.3 ease-out;
+}
+
+.carrinho:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+ .carrinho{
+     position: relative;
+     right: 50px;
+     max-height: 250px;
+     width: 800px;
+     border-radius: 5px;
+     box-shadow: 7px 7px 13px 0;
+     padding: 20px;
+     margin: 100px;
+     background-color: #C0D8C0 ;
+ }
+ 
+ .carrinho > .img{
+     max-width: 300px;
+     max-height: 200px;
+     object-fit: cover;
+ }
+.carrinho .titulo{
+    position: relative;
+    left: 150px;
+    bottom: 200px;
+    font-size: 25px;
+}
+
+.carrinho .titulo2{
+    position: absolute;
+    left: 250px;
+    bottom: 200px;
+    font-size: 25px;
+}
+
+.carrinho .informações{
+    position: absolute;
+    left: 150px;
+    bottom: 40px;
+    font-size: 20px;
+}
+
+.carrinho .informações2{
+    position: absolute;
+    left: 235px;
+    bottom: 40px;
+    font-size: 20px;
+}
+
+.opções{
+    position: relative;
+    left: 1100px;
+    top: -700px;
+    font-size: 30px;
+    background-color: #ECB390;
+    width: 35rem;
+    height: 38rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagamentos{
+    position: relative;
+    left: 1150px;
+    top: -1260px;
+    font-size: 23px; 
+    line-height: 55px;
+}
+
+.cupom{
+    position: relative;
+    left: 1150px;
+    top: -1250px;
+    font-size: 25px;
+}
+
+.total{
+    position: relative;
+    left: 1150px;
+    top: -1210px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.desconto{
+    position: relative;
+    left: 1150px;
+    top: -1190px;
+    font-size: 20px;    
+}
+ .frete{
+     position: relative;
+     left: 1160px;
+     top: -1170px;
+     font-size: 25px;
+ }
+
+ .linha{
+     position: relative;
+     left: 1130px;
+     top: -1315px;
+     width: 500px;
+     border-color: black;
+ }
+
+ .btfinalizar{
+    background-color: #DD4A48; 
+    position: relative;
+    left: 1200px;
+    top: -1140px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    width: 400px;
+    height: 90px;
+    cursor: pointer;
+ }
+
+.footer{
+    position: relative;
+    height: 20rem;
+    min-width: 100%;
+    background-color: #ECB390;
+    top: -1000px;
+ }
+ 
+ .footer > .logo{
+     height: 15rem;
+     width: 15rem;
+     align-items: right;
+     margin-top: -10px;
+ }
+
+ .footer > .mapa iframe{
+     position:absolute;
+     bottom: 30px;
+     right: 800px;
+     height: 16rem;
+     width: 50rem;
+     align-items: right;
+     margin-left: -250px;
+ }
+
+ .footer .textos{
+     position: absolute;
+     right: 40px;
+     bottom: 120px;
+     margin-left: 200px;
+     font-size: 27px;
+     line-height: 36px;
+
+ }
+
+ .footer > .bandeiras ul{
+     list-style: none;
+     position: relative;
+     right: -1220px;
+     top: -20px;
+     font-size: 23px;;
+     
+ }
+ 
