@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+a {
+    color: #DD4A48;
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-delay: 0.5ms;
+    transition-property: color;
+}
+
+a:hover {
+    color: #DD4A48;
+    font-size: large;
+    opacity: 80%;
+    transition-property: color;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #FFFCF5;
+    background: 1301px;
+    margin: 0px;
+    
+}
+
+header {
+    background-color: #F5EEDC;
+    margin: 0px 0px 60px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 0px;
+    height: 12rem;
+    width: 100%;
+    max-width: 100%;
+    position: sticky;
+    z-index: 9999;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+#loginCadastroHeader {
+    color: #DD4A48;
+    background-color: #C0D8C0;
+}
+
+h4 {
+    color: #DD4A48;
+}
+
+#barraPesquisa {
+color: #F5EEDC;
+background-color: #ECB390;
+stroke: #C0D8C0;
+
+}
+
+#email, #senha {
+    background-color: #F5EEDC;
+}
+
+.login {
+    color: #DD4A48;
+    background-color: #C0D8C0;
+}
+
+#botaoEntrar {
+    color: #C0D8C0;
+    background-color: #DD4A48;
+    
+}
+
+.loginSocialMidia {
+    background-size: 220%, 220%;
+    background-color: #C0D8C0;
+    stroke-width: 2px;
+    stroke: #DD4A48;
+}
+
+.iconesLogin {
+    background-color: #F5EEDC;
+    background-size: 200px, 200px;
+}
+
+.textoFooter {
+    font-size: 15px;
+    display: grid;
+
+}
+
