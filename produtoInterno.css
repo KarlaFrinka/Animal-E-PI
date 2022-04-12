@@ -1,0 +1,145 @@
+/* RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0B0A0A;
+}
+
+
+/* ESTILOS HEADER */
+header{
+    background-color: #F5EEDC;
+}
+
+.btn_buscar .btn{
+    color: gray;
+    border-color: gray;
+}
+.btn_criar_conta .btn{
+    border-color:#DD4A48;
+    background-color:#DD4A48;
+    font-weight: 600;
+    color:#fff;
+}
+
+/*PRODUTO PRINCIPAL */
+.produto-principal{
+    display:flex; 
+    gap: 10px; 
+    align-items:center; 
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+}
+.produto-principal-info{
+    max-width: 100%;
+    margin-left: 80px;
+}
+.img-fluid{
+    max-width: 70%;
+}
+.titulo_produto{
+    font-weight: 700;
+}
+.produto_preco{
+    font-weight: 700;
+}
+.comprar_agora .btn{
+    border-color:#DD4A48;
+    background-color:#DD4A48;
+    font-weight: 600;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.adicionar_carrinho .btn{
+    border-color:lightgray;
+    background-color:lightgray;
+    font-weight: 600;
+    color:#fff;
+}
+.outras_opcoes{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-title{
+    font-weight: 800px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.card img{
+    max-width: 80%;
+}
+@media (max-width: 800px){
+    .produto-principal{
+        flex-direction: column;
+    }
+    .img-fluid{
+        max-width: 460px;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+footer{
+    background-color: #F5EEDC;
+    padding: 50px 0px;
+}
+
+footer .logo{
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+
+.mapa iframe{
+    max-width: 100%;
+    height: 200px;
+    width: 400px;
+}
+
+.info{
+    text-align: center;
+}
+
+
+.info .contato h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info .contato ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.info .contato ul a{
+    text-decoration: none;
+    color:#0B0A0A;
+}
+
+.gap{
+    gap: 10px;
+}
+
+.formas-pagamento ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    margin-left: 40px;
+}
