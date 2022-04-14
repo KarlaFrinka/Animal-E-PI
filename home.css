@@ -14,7 +14,7 @@ body{
 }
 
 .wpp{
-    color: white;
+    color: green;
     height: 100px;
     width: 100px;
     position: fixed;
@@ -87,6 +87,7 @@ body{
     grid-row-gap: 10px;
     height: 4rem;
     box-sizing: border-box;
+    background-color: #ECB390;
 }  
 
 a:hover{
@@ -116,7 +117,7 @@ a{
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
-    border-color:#ECB390;
+    border: none;
 }
 
 .vitrines{
@@ -164,7 +165,7 @@ a{
      font-size: large;
      font-weight: bold;
      margin-top: 100px; 
-     border-color: #DD4A48;
+     border: none;
 
  }
 
@@ -188,8 +189,8 @@ a{
  }
 
  .logofoot{
-     height: 200px;
-     width: 200px;
+     height: 300px;
+     width: 300px;
  }
 
  .redessociais{
@@ -200,7 +201,8 @@ a{
  .footer > .mapa{
      border: 1px;
      border-color:#DD4A48;
-     height: 16rem;
+     height: 20rem;
+     width: 60rem;
      max-width: 90%;
      align-items: center;
      margin-top: 10px;
