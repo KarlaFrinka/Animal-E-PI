@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: #ECB390;
+    background-color: white;
     max-width: 100vw;  
     max-height: 100vh;
 }
@@ -101,6 +101,7 @@ a{
 
 .btlogin:hover{
     color: #F5EEDC;
+    cursor: pointer;
 }
 
 .topo > .btlogin{
@@ -144,7 +145,7 @@ a{
      border-color: #DD4A48;
  }
  
- .vitrine > .img{
+ .vitrine .img{
      max-width: 300px;
      max-height: 301px;
      object-fit: cover;
@@ -156,7 +157,7 @@ a{
      cursor: pointer;   
  }
 
- .vitrine > .btpreco{
+ .vitrine .btpreco{
      width: 10rem;
      height: 3rem;
      border-radius: 1rem;
@@ -296,8 +297,8 @@ a{
         align-content: center;
         justify-content: center;
     }
-    .footer > .mapa{
-        width: 80%;
-        height: 300px;
+
+    .footer .mapa{
+        display: none;
     }
  }
