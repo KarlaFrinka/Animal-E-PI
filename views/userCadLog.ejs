@@ -1,0 +1,99 @@
+<% -include("./partials/header")%>
+
+<main>
+
+    <body>
+
+        <!-- NOSSAS MÍDIAS SOCIAIS À ESQUERDA DO SITE, NA VERTICAL, E COM STICKER -->
+
+        <div class="nossoSocialMidia">
+        
+            <a><img src="/public/img/facebook.png" alt="Ícone clicável para a nossa página do facebook"></a>
+            <a><img src="/public/img/google.png" alt="Ícone clicável para a nossa página do google"></a>
+            <a><img src="/public/img/instagram.png" alt="Ícone clicável para a nossa página do instagram"></a>
+            <a><img src="/public/img/twitter.png" alt="Ícone clicável para a nossa página do twitter"></a>
+        
+        </div>
+
+        <h3 id="tituloCadastroCliente">Acesse a sua área</h3>
+
+        <div class="loginCadastro">
+
+            <div class="loginSocialMidia">
+                <p>
+                <h4>Não é cadastrado? Entre com:</h4>
+                </p>
+
+                <!-- AQUI O CAMINHO PARA AS MÍDIAS É PARA LOGIN VIA POPUP-->
+
+                <div class="iconesLogin">
+
+                    <a rel="noreferrer noopener" target="_blank" href="https://pt-br.facebook.com/">
+                        <img class="socialmidia" src="/public/img/facebook.png" alt="Ícone para logar pelo facebook">
+                    </a>
+
+                    <a rel="noreferrer noopener" target="_blank" href="https://www.instagram.com/accounts/login/">
+                        <img class="socialmidia" src="/public/img/instagram.png" alt="Ícone para logar pelo instagram">
+                    </a>
+
+                    <a rel="noreferrer noopener" target="_blank"
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D">
+                        <img class="socialmidia" src="/public/img/twitter.png" alt="Ícone para logar pelo twitter">
+                    </a>
+
+                    <a rel="noreferrer noopener" target="_blank"
+                        href="https://accounts.google.com/signin/v2/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <img class="socialmidia" src="/public/img/google.png" alt="Ícone para logar pelo google">
+                    </a>
+                </div>
+
+                <div class="login">
+                    <p>
+                    <h4>Entre com a sua conta</h4>
+                    </p>
+                    
+                    <input type="email" title="email" value="Seu e-mail" />
+                    
+                    <div id="input">
+                    <input type="password" title="password" value="Digite a sua senha" />
+                    <img src="/public/icones/verSenha.png" alt="Lembrar senha">
+                    </div>
+
+                    <input type="submit" id="botaoEntrar" value="Entrar" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARROSSEL DE INDICAÇÃO DE PRODUTOS MAIS VENDIDOS -->
+
+    <h4>Mais procurados...</h4>
+
+        <div class="procuradosCarrossel">
+
+            <div class="procurados">
+                <img class="img" src="../public/images/caoLouis.png">
+                <h2 class="titulo">Conjunto Paris, todos os tamanhos, a partir de:</h2>
+                <button class="btpreco">Preço</button>
+            </div>
+
+            <div class="procurados">
+                <img class="img" src="../public/images/mochilaGato.png">
+                <h2 class="titulo">Mochila Vai Pá Onde? para gatos, tamanho único</h2>
+                <button class="btpreco">Preço</button>
+            </div>
+
+            <div class="procurados">
+                <img class="img" src="../public/images/caoFloquinho.png">
+                <h2 class="titulo">Kit de brinquedos Mimadinha, com roupinha, tamanho PP</h2>
+                <button class="btpreco">Preço</button>
+            </div>
+
+        </div>
+
+        
+
+    <% -include("./partials/footer")%>
+        
