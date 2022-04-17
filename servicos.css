@@ -151,6 +151,9 @@ a{
 }
 
  .card{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
      width: 50rem;
      height: 30rem;
      border-radius: 20px;
@@ -161,29 +164,23 @@ a{
      background-color: #C0D8C0 ;
      border-color: #DD4A48;
  }
+
+ .cardtexto {
+     width: 55%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     line-height: 40px;
+     font-size: 20px;
+     /* border: 1px solid red; */
+     text-align: center;
+ }
  
  .card .img{
      width: 300px;
      height: 400px;
-    
- }
-
- .card .nome{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 30px;
-     margin-left: 300px;
-     margin-top: -500px;
-     line-height: 300px;
-     
- }
-
- .card .informacoes{
-     font-size: 20px;
-     margin-left: 350px ;
-     
-     
  }
  
  .btcontratar:hover{
@@ -192,15 +189,13 @@ a{
      cursor: pointer;   
  }
 
- .card .btcontratar{
+ .btcontratar{
      width: 10rem;
      height: 3rem;
      border-radius: 1rem;
      font-size: large;
      font-weight: bold;
      border: none;
-     margin-left: 450px;
-     margin-top: 100px;
  }
 
 
@@ -275,6 +270,22 @@ a{
 
 
 @media (max-width: 800px){
+    
+    .wpp:hover{
+        color:#DD4A48;
+        transition: 1s ease-in-out;
+    }
+
+    .wpp{
+        color: green;
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        top: 3rem;
+        right: 2rem;
+        z-index: 1;
+
+    }
     .topo{
         flex-direction: column;
         margin: none;
@@ -321,6 +332,12 @@ a{
        height: 300px;
    }
 
+   .cardtexto{
+       font-size: 15px;
+       line-height: 20px;
+       text-align: center;
+   }
+
    .card .img{
        width: 200px;
        height: 270px;
@@ -334,14 +351,10 @@ a{
        padding: none;
     }
 
-    .informacoes{
-
+    .btcontratar:hover{
+        background-color:#DD4A48;
+        color: white;   
     }
-
-    .btcontratar{
-        
-    }
-
 
 
 
