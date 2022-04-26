@@ -17,4 +17,7 @@ router.get('/userCadLog', servicosController.userCadLog);
 
 router.get('/userLogado', servicosController.userLogado);
 
+
+router.get('/carrinho', servicosController.carrinho);
+
 module.exports = router;

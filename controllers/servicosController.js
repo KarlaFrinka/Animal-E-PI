@@ -19,6 +19,9 @@ const servicosController = {
     },
     userLogado: (req, res) => {
         res.render("userLogado")
+    },
+    carrinho: (req, res) => {
+        res.render("carrinho")
     }
 }
 
