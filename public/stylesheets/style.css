@@ -26,7 +26,6 @@ body {
 
 .wpp {
     color: green;
-    height: 200px;
     width: 60px;
     position: fixed;
     bottom: 100px;
@@ -74,7 +73,10 @@ body {
     width: 600px;
     height: 3rem;
     background-color: #ECB390;
-    border: none;
+    border: solid;
+    border-color:#c0d8c0;
+    border-radius: 10px;
+
 }
 
 .barrapesquisa:focus {
@@ -87,15 +89,19 @@ body {
 
 .btbuscar {
     background-color: #ECB390;
-    border: none;
+    border: solid;
+    border-color:#c0d8c0;
     height: 3rem;
     width: 4rem;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .divtop {
+    border: solid;
+    border-color:#c0d8c0;
     display: grid;
-    display: -ms-grid;
+    /* display: -ms-grid; */
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -110,21 +116,31 @@ body {
 
 .divtop a {
     color: black;
+    
 }
 
-a:hover {
-    color: #F5EEDC;
+.divtop a:hover {
+    color: #DD4A48;
+    transition: color;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-size: larger;
 }
 
 .btlogin:hover {
-    color: #F5EEDC;
+    color: #DD4A48;
     cursor: pointer;
+    text-decoration:none;
+    border: solid;
+    border-color: #DD4A48;
+    transition-duration: 2s;
+    transition-delay: 0.5ms;
+    transition-property: border;
+    font-weight: bold;
 }
 
 .topo>.btlogin {
@@ -137,9 +153,8 @@ a {
     width: 9rem;
     height: 3rem;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
+    border-radius: 10px;
+    
 }
 
 /*FINAL CSS HEADER*/
@@ -210,16 +225,19 @@ a {
 
 /*INÍCIO CSS FOOTER */
 .footer {
-    display: flex;
+    border: solid;
+    border-color:#c0d8c0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-column: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-height: 100%;
     max-width: 100%;
     background-color: #F5EEDC;
     top: 100px;
-    padding-left: 100px;
+    padding-left: 0px;
     padding-right: 100px;
-    margin-top: 50px;
     box-sizing: border-box;
 }
 
@@ -230,6 +248,17 @@ a {
     justify-content: center;
 }
 
+.mapa:hover {
+    opacity: 100%;
+    
+
+}
+
+.mapa {
+    opacity: 80%;
+}
+
+
 .logofoot {
     height: 200px;
     width: 200px;
@@ -237,18 +266,7 @@ a {
 
 .redessociais {
     margin-bottom: 10px;
-}
 
-
-.footer>.mapa {
-    border: 1px;
-    border-color: #DD4A48;
-    height: 18rem;
-    width: 40rem;
-    max-width: 90%;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 15px;
 }
 
 .info {
