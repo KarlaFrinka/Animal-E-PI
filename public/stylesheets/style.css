@@ -3,6 +3,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    bottom: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #c0d8c0;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ce6f6d;
+    border-radius: 30px;
+    
 }
 
 body {
