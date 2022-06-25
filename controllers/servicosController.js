@@ -1,7 +1,4 @@
 const servicosController = {
-    servicos: (req, res) => {
-        res.send(servicos);
-    },
     home: (req, res) => {
         res.render("home");
     },
@@ -11,10 +8,7 @@ const servicosController = {
     produtos: (req, res) => {
         res.render("produtos")
     },
-    servicos: (req, res) => {
-        res.render("servicos")
-    },
-    userCadLog: (req, res) => {
+    userCadastro: (req, res) => {
         res.render("userCadLog")
     },
     userLogado: (req, res) => {
@@ -22,6 +16,9 @@ const servicosController = {
     },
     carrinho: (req, res) => {
         res.render("carrinho")
+    },
+    servicos: (req, res) => {
+        res.render("servicos")
     }
 }
 

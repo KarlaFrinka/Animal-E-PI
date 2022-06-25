@@ -1,4 +1,3 @@
-const { shallowCopyFromList } = require("ejs/lib/utils");
 
 module.exports = (sequelize, DataTypes) => {
     const Animale = sequelize.define("Clientes", {
