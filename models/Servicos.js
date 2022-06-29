@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Animale = sequelize.define("Servicos", {
+    const Servicos = sequelize.define("Servicos", {
         banho_e_tosa: DataTypes.STRING,
         hotel: DataTypes.STRING,
         adestramento: DataTypes.STRING,

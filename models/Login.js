@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Animale = sequelize.define("Login", {
+    const Login = sequelize.define("Login", {
         email: DataTypes.STRING,
         senha: DataTypes.STRING,
        }, {

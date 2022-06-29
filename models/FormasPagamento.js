@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Animale = sequelize.define("FormasPagamento", {
+    const FormasPagamento = sequelize.define("FormasPagamento", {
         numeroCartao: DataTypes.INTEGER,
         dataVencimento: DataTypes.INTEGER,
         cvv: DataTypes.INTEGER,

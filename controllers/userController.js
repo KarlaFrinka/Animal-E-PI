@@ -1,6 +1,6 @@
 const db = require("../models");
 
-const userCadLogController = {
+const userController = {
     index: (req, res) => {
         db.Clientes.findAll().then((data) => {
             res.send(data)

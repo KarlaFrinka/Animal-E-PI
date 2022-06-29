@@ -6,22 +6,6 @@
     
 }
 
-::-webkit-scrollbar {
-    width: 13px;
-    bottom: none;
-}
-
-::-webkit-scrollbar-track {
-    background: #c0d8c0;
-    border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #ce6f6d;
-    border-radius: 30px;
-    
-}
-
 body {
     background-color: white;
     max-width: 100vw;
@@ -30,20 +14,22 @@ body {
 
 .wpp:hover {
     color: green;
-    transition: 2s ease-in-out;
+    transition: 5s ease-in-out;
     min-width: 120px;
     position: relative;
     display: inline-block;    
     text-align: center;
     padding: 10px 15px;
     margin: 30px 25px;   
-    transition: 1s;
+    transition: 10s;
 
 }
 
 .wpp {
+    height: 80px;
+    width: 80px;
     color: green;
-    width: 60px;
+    width: 100px;
     position: fixed;
     bottom: 100px;
     right: 20px;
@@ -90,8 +76,7 @@ body {
     width: 600px;
     height: 3rem;
     background-color: #ECB390;
-    border: solid;
-    border-color:#c0d8c0;
+    border: none;
     border-radius: 10px;
 
 }
@@ -106,24 +91,25 @@ body {
 
 .btbuscar {
     background-color: #ECB390;
-    border: solid;
-    border-color:#c0d8c0;
+    border: none;
     height: 3rem;
     width: 4rem;
-    overflow: hidden;
     border-radius: 10px;
 }
 
+.carrinho{
+    height: 150px;
+    width: 80px;
+}
+
 .divtop {
-    border: solid;
-    border-color:#c0d8c0;
+    border: none;
     display: grid;
-    /* display: -ms-grid; */
     align-items: center;
     align-content: center;
     justify-content: center;
     grid-template-columns: 100px 100px 100px 100px;
-    -ms-grid-column: 100px 100px 100px 100px;
+    grid-column: 100px 100px 100px 100px;
     grid-column-gap: 100px;
     grid-row-gap: 10px;
     height: 4rem;
@@ -177,14 +163,19 @@ a {
 /*FINAL CSS HEADER*/
 
 /*INÍCIO CSS BODY PAGINA HOME*/
+
+.procurados{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
 .vitrines {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
     transition: all 0.3 ease-out;
-    padding-left: 150px;
-    padding-right: 150px;
     margin-top: 50px;
 }
 
@@ -242,11 +233,10 @@ a {
 
 /*INÍCIO CSS FOOTER */
 .footer {
-    border: solid;
-    border-color:#c0d8c0;
+    border: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-column: auto;
+    grid-column: auto;
     align-items: center;
     justify-content: space-evenly;
     max-height: 100%;
@@ -349,71 +339,21 @@ a {
 
     .footer>.textos {
         margin-top: 50px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
+        text-align: center;
     }
 
     .mapa {
         max-width: 90%;
         align-self: center;
+        
+    }
+
+    .wpp{
+        display: none;
     }
 
 }
 
-@media (max-width: 1200px) {
-    .topo {
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .produto-principal-info {
-        flex-direction: column;
-        justify-content: left;
-        margin-left: -190px;
-        padding: none;
-    }
-
-    .pesquisa {
-        max-width: 50%;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .produto-principal {
-        flex-direction: column;
-    }
-
-    .vitrines {
-        flex-direction: column;
-    }
-
-    .footer {
-        max-width: 100%;
-        max-height: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .footer>.textos {
-        margin-top: 50px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .footer .mapa {
-        max-width: 90%;
-    }
-}
 
 /*FINAL CSS RESPONSIVIDADE HEADER, BODY E FOOTER */
 /*FINAL CSS PAGINA HOME*/
@@ -427,7 +367,7 @@ a {
 .container-produtos {
     width: 100%;
     overflow: hidden;
-    padding: 30px 0;
+    padding: 0px 0;
     box-sizing: border-box;
 }
 
@@ -480,16 +420,12 @@ a {
     width: 200px;
     border-radius: 15%;
     padding: 3px;
-    background: #FF676D;
     margin-bottom: 14px;
 }
 
 .container-produtos .card .content .img img {
     height: 100%;
     width: 100%;
-    border: 3px solid #ffff;
-    border-radius: 15%;
-    object-fit: cover;
 }
 
 .container-produtos .card .content .name {
@@ -497,10 +433,10 @@ a {
     font-weight: 500;
 }
 
-.container-produtos .card .content .job {
+/* .container-produtos .card .content .job {
     font-size: 20px;
     color: #FF676D;
-}
+} */
 
 .container-produtos .button {
     width: 100%;
@@ -513,7 +449,7 @@ a {
     height: 15px;
     width: 15px;
     border-radius: 20px;
-    background: #DD4A48;
+    /* background: #DD4A48; */
     margin: 0 4px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -1257,9 +1193,7 @@ input[type="radio"] {
 /* INICIO CSS OUTROS PRODUTOS */
 
 
-.container-opc{
-    
-}
+
 .tittle_cards_outros{
     text-align: center;
     color: #DD4A48;
@@ -1286,4 +1220,30 @@ input[type="radio"] {
 }
 strong{
     color: #DD4A48;
+}
+
+/* INICIO DO CSS SERVICOS */
+
+.servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.cards1{
+    display: flex;
+    height: 800px;
+    width: 800px;
+    margin-top: 100px;
+    
+    
+}
+
+.cards2{
+    display: flex;
+    height: 800px;
+    width: 800px;
 }

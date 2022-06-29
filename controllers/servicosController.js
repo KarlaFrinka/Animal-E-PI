@@ -1,4 +1,4 @@
-const servicosController = {
+const navegacaoController = {
     home: (req, res) => {
         res.render("home");
     },
@@ -9,7 +9,7 @@ const servicosController = {
         res.render("produtos")
     },
     userCadastro: (req, res) => {
-        res.render("userCadLog")
+        res.render("userCadastro")
     },
     userLogado: (req, res) => {
         res.render("userLogado")
@@ -19,7 +19,10 @@ const servicosController = {
     },
     servicos: (req, res) => {
         res.render("servicos")
+    },
+    doe: (req,res) => {
+        res.render("doe")
     }
 }
 
-module.exports = servicosController;
+module.exports = navegacaoController;
