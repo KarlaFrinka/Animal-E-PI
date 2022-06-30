@@ -1,4 +1,4 @@
-const navegacaoController = {
+const servicosController = {
     home: (req, res) => {
         res.render("home");
     },
@@ -25,7 +25,14 @@ const navegacaoController = {
     },
     register: (req, res) => {
         res.render("cadastro")
-    }
+    },
+    edit: (req, res) => {
+        res.render("edicaoCadastro")
+    },
+    update: (req, res) =>[
+        res.render("atualizacaoCadastro")
+    ]
+
 }
 
-module.exports = navegacaoController;
+module.exports = servicosController;

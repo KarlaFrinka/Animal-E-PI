@@ -9,9 +9,14 @@ router.get('/produtoInterno', servicosController.produtoInterno);
 
 router.get('/produtos', servicosController.produtos); 
 
+// CRUD BÁSICO
 router.get('/userCadastro', servicosController.userCadastro);
 
 router.post('/userCadastro', servicosController.register);
+
+router.get('/userLogado', servicosController.edit);
+
+router.post('/userLogado', servicosController.update);
 
 router.get('/userLogado', servicosController.userLogado);
 

@@ -9,17 +9,29 @@ const userController = {
         });
     },
 
-    register: (req, res) => {
+    create: function (req, res) {
+        const {nomeCompleto, email, senha, senhaNovamente} = req.body
         db.Clientes.create({
-            nomeCompleto: req.body.nomeCompleto,
-            email: req.body.email,
-            senha: req.body.senha,
-            senhaNovamente: req.body.senhaNovamente
+            nomeCompleto,
+            email,
+            senha,
+            senhaNovamente
         })
-        .then(() => res.redirect('/home'))
-        .catch((error) => console.log(error))
-
+        .then(() => {
+            res.redirect('/userLogado')
+        })
+        .catch(() => {
+            res.redirect('/Home');
+        })
     },
+
+    edit: function (req, res) {
+        const { idClientes } = req.params;
+        const Clientes = await db.Movie.findByPk(idClientes);
+        res.render("loginEdicao", {
+            
+        })  
+     }
 };
 
 module.exports = userController;
