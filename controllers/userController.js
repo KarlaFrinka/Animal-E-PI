@@ -7,7 +7,19 @@ const userController = {
         }).catch((err) => {
             res.send("Erro no resultado", err);
         });
-    }
-}
+    },
+
+    register: (req, res) => {
+        db.Clientes.create({
+            nomeCompleto: req.body.nomeCompleto,
+            email: req.body.email,
+            senha: req.body.senha,
+            senhaNovamente: req.body.senhaNovamente
+        })
+        .then(() => res.redirect('/home'))
+        .catch((error) => console.log(error))
+
+    },
+};
 
 module.exports = userController;

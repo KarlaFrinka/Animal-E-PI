@@ -22,6 +22,9 @@ const navegacaoController = {
     },
     doe: (req,res) => {
         res.render("doe")
+    },
+    register: (req, res) => {
+        res.render("cadastro")
     }
 }
 

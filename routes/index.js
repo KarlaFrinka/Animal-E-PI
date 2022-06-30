@@ -11,6 +11,8 @@ router.get('/produtos', servicosController.produtos);
 
 router.get('/userCadastro', servicosController.userCadastro);
 
+router.post('/userCadastro', servicosController.register);
+
 router.get('/userLogado', servicosController.userLogado);
 
 router.get('/carrinho', servicosController.carrinho);

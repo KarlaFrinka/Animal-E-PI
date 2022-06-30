@@ -11,19 +11,19 @@
 
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Seu nome e sobrenome" required>
+                        <input type="text" name= "nomeCompleto" placeholder="Seu nome e sobrenome" required>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Seu email" required>
+                        <input type="text" name= "email" placeholder="Seu email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Crie uma senha" required>
+                        <input type="password" name= "senha" class="password" placeholder="Crie uma senha" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Repita a senha" required>
+                        <input type="password" name= "senhaNovamente" class="password" placeholder="Repita a senha" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" href="/userLogado.ejs" value="Entre">
+                        <button href="./home.ejs" >Entre</button>
                     </div>
                 </form>
             </div>
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Entre">
+                        <button href="./home.ejs" >Entre</button>
                     </div>
                 </form>
 

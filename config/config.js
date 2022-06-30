@@ -2,22 +2,22 @@ module.exports = {
   "development": {
     "username": "root",
     "password": null,
-    "database": "animal_e",
-    "host": "127.0.0.1",
+    "database": "animal-e-pi",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "database": "animal-e-pi",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "database": "animal-e-pi",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }
