@@ -9,5 +9,7 @@ module.exports = (sequelize, DataTypes) => {
            timestamps: false
        });
 
+       Pedidos.hasMany(Produtos,{ForeignKey:"FormasPagamento", as:"PagamentoPedido"})
+
         return Pedidos;
 }

@@ -14,5 +14,12 @@ module.exports = (sequelize, DataTypes) => {
            timestamps: false
        });
 
+       Clientes.hasMany(Pedidos,{ForeignKey:"Pedidos_id", as:"Pedidos"});
+       Clientes.associate(Login);
+       Clientes.hasMany(Servicos,{ForeignKey:"Servicos_id", as: "ServicosCliente"});
+       Clientes.hasMany(Docao,{ForeignKey:"Doacao_iddocao", as: "DoacaoCliente"});
+       Clientes.hasMany(FormasPagamento,{ForeignKey:"FormasPagamento_idFormasDePagamento", as: "FormaPagamentoCliente"})
+
+      }
+
         return Clientes;
-}

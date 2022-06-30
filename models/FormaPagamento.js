@@ -8,5 +8,7 @@ module.exports = (sequelize, DataTypes) => {
            timestamps: false
        });
 
+       FormasPagamento.hasMany(Pedidos);
+
         return FormasPagamento;
 }

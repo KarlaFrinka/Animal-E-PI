@@ -9,6 +9,8 @@ module.exports = (sequelize, DataTypes) => {
         tablename: "Produtos",
         timestamps: false
     })
+
+    Produtos.belongsTo(Pedidos);
     
     return Produtos;
 }

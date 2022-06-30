@@ -7,5 +7,7 @@ module.exports = (sequelize, DataTypes) => {
            timestamps: false
        });
 
+       Login.associate(Cliente,{ForeignKey:"Clients_id", as: "ClientesLogin"});
+
         return Login;
 }

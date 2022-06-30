@@ -14,5 +14,7 @@ module.exports = (sequelize, DataTypes) => {
            timestamps: false
        });
 
+       Doacao.associate(Clientes);
+
         return Doacao;
 }

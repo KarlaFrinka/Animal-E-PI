@@ -7,7 +7,10 @@ module.exports = (sequelize, DataTypes) => {
        }, {
            tablename: "Servicos",
            timestamps: false
-       });
+       }); 
+
+       Servicos.hasMany(Clientes,{ForeignKey:"Pedidos_id", as: "ServicosProdutos"});
+       
 
         return Servicos;
 }
