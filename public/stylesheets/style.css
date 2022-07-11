@@ -360,8 +360,11 @@ a {
 
 /*INÍCIO CSS PÁGINA PRODUTOS*/
 /*INÍCIO CSS BODY PRODUTOS*/
-.produto-interno .quem-viu {
+.destaque{
     margin: 40px;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-produtos {
@@ -415,28 +418,28 @@ a {
     text-align: center;
 }
 
-.container-produtos .cards .card .content .img {
+/* .container-produtos .cards .card .content .img {
     height: 200px;
     width: 200px;
     border-radius: 15%;
     padding: 3px;
     margin-bottom: 14px;
-}
+} */
 
-.container-produtos .card .content .img img {
+/* .container-produtos .card .content .img img {
     height: 100%;
     width: 100%;
-}
+} */
 
 .container-produtos .card .content .name {
     font-size: 20px;
     font-weight: 500;
 }
 
-/* .container-produtos .card .content .job {
+.container-produtos .card .content .job {
     font-size: 20px;
-    color: #FF676D;
-} */
+    color: black;
+}
 
 .container-produtos .button {
     width: 100%;
@@ -449,7 +452,6 @@ a {
     height: 15px;
     width: 15px;
     border-radius: 20px;
-    /* background: #DD4A48; */
     margin: 0 4px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -694,17 +696,6 @@ a {
     }
 }
 
-@media (max-width: 450px) {
-    .product-card {
-        max-width: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-
-    }
-}
 
 /*INÍCIO CSS CARD SLIDE PRODUTO INTERNO*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -830,32 +821,6 @@ input[type="radio"] {
     display: none;
 }
 
-@media (max-width: 1200px) {
-    .container .main-card {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .container .main-card .cards {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .container .main-card .cards .card {
-        margin-top: 10px;
-    }
-}
 
 @media (max-width: 800px) {
     .main-card .cards .card {
@@ -868,90 +833,7 @@ input[type="radio"] {
     }
 }
 
-@media (max-width: 450px) {
-    .container .main-card {
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
 
-    }
-
-    .container .main-card .cards {
-        max-width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .container .main-card .cards .card {
-        margin-top: 10px;
-        width: 300px;
-    }
-
-    .topo {
-        flex-direction: column;
-        margin: none;
-        padding: none;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .pesquisa {
-        max-width: 80%;
-    }
-
-    .divtop {
-        display: flex;
-        height: 200px;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-    }
-
-    .footer {
-        max-width: 100%;
-    }
-
-    .footer .mapa {
-        max-width: 350px;
-    }
-
-    .footer .textos {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        max-width: 100%;
-    }
-
-    .footer .textos h2,
-    h4,
-    h3 {
-        font-size: 20px;
-    }
-
-    .footer .bandeiras {
-        width: 150%;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-left: -55px;
-    }
-}
 
 /*FINAL CSS BODY PRODUTO INTERNO*/
 /*FINAL CSS PÁGINA PRODUTO INTERNO*/
@@ -976,7 +858,7 @@ input[type="radio"] {
     position: relative;
     max-width: 100%;
     width: 100%;
-    background: #fff;
+    background: #C0D8C0;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
@@ -1114,25 +996,26 @@ input[type="radio"] {
     text-decoration: underline;
 }
 
-.form .button {
+button .btentre {
     margin-top: 35px;
 }
 
-.form .button input {
+button .btentre {
+    width: 100px;
     border: none;
-    color: #fff;
+    color:  #DD4A48;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #DD4A48;
+    background-color: #C0D8C0;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.input-field button:hover {
-    color: #DD4A48;
-    background-color: #c0d8c0;
+.btentre:hover {
+    color: #C0D8C0;
+    background-color:  #DD4A48;
 
 }
 
@@ -1194,32 +1077,70 @@ input[type="radio"] {
 
 
 
-.tittle_cards_outros{
+.titulo{
     text-align: center;
-    color: #DD4A48;
+    color: black;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.cards_outros_produto_detalhes{
+.vitrines {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    transition: all 0.3 ease-out;
+    margin-top: 50px;
 }
-.card {
-    margin-left: 40px;
+
+.vitrine:hover {
+    transform: translateY(-5px);
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0;
+    padding: 10px;
+    margin: 40px;
     background-color: #C0D8C0;
+    border-color: #DD4A48;
+}
+
+.vitrine .img {
+    max-width: 300px;
+    max-height: 301px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.vitrine .informacoes {
     text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
-.card-img-top{
-    border: 3px solid #DD4A48;
+
+.vitrine .btpreco:hover {
+    background-color: #DD4A48;
+    color: white;
+    cursor: pointer;
+}
+
+.vitrine .btpreco {
+    width: 10rem;
+    height: 2rem;
     border-radius: 1rem;
-    max-width: 70%;
-    margin-left: 42px;
-    margin-top: 10px;
-}
-strong{
-    color: #DD4A48;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    border: none;
 }
 
 /* INICIO DO CSS SERVICOS */

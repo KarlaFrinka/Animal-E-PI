@@ -20,6 +20,9 @@ const servicosController = {
     servicos: (req, res) => {
         res.render("servicos")
     },
+    contatos: (req, res) => {
+        res.render("contatos")
+    },
     doe: (req,res) => {
         res.render("doe")
     },

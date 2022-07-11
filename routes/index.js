@@ -24,6 +24,8 @@ router.get('/carrinho', servicosController.carrinho);
 
 router.get('/servicos', servicosController.servicos);
 
+router.get('/contatos', servicosController.contatos);
+
 router.get('/doe', servicosController.doe);
 
 
