@@ -1,0 +1,83 @@
+<title>Cadastro</title>
+
+<%-include("./partials/header")%>
+
+    <div class="container">
+        <div class="forms-signup">
+
+            <div class="form login">
+
+                <span class="title">Cadastro</span>
+
+                <form action="./home.ejs">
+                    <div class="input-field">
+                        <input type="text" name= "nomeCompleto" placeholder="Seu nome e sobrenome" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name= "email" placeholder="Seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name= "senha" class="password" placeholder="Crie uma senha" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name= "senhaNovamente" class="password" placeholder="Repita a senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">Lembre-me</label>
+                        </div>
+
+                        
+                    </div>
+
+                
+                        <button class="btentre" href="./home" >Entre</button>
+                    
+                </form>
+            </div>
+
+
+            <div class="form login">
+
+                <span class="title">Login</span>
+
+                <form action="./home.ejs">
+                    <div class="input-field">
+                        <input type="text" placeholder="Seu e-mail" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="current-password" class="password" placeholder="Sua Senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lembre-me</label>
+                        </div>
+
+                        <a href="#" class="text">Esqueceu a sua senha?</a>
+                    </div>
+
+                        <button class= 'btentre' href="./home.ejs" >Entre</button>
+                    
+                </form>
+
+                
+            </div>
+
+        </div>
+    </div>
+    
+
+
+<%-include("./partials/footer")%>
