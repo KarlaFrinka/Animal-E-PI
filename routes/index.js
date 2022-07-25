@@ -19,6 +19,7 @@ router.get('/userLogado', servicosController.edit);
 router.post('/userLogado', servicosController.update);
 
 router.get('/userLogado', servicosController.userLogado);
+//FIM CRUD
 
 router.get('/carrinho', servicosController.carrinho);
 

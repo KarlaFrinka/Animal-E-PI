@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
@@ -17,10 +17,10 @@ body {
     transition: 5s ease-in-out;
     min-width: 120px;
     position: relative;
-    display: inline-block;    
+    display: inline-block;
     text-align: center;
     padding: 10px 15px;
-    margin: 30px 25px;   
+    margin: 30px 25px;
     transition: 10s;
 
 }
@@ -97,7 +97,7 @@ body {
     border-radius: 10px;
 }
 
-.carrinho{
+.carrinho {
     height: 150px;
     width: 80px;
 }
@@ -119,7 +119,7 @@ body {
 
 .divtop a {
     color: black;
-    
+
 }
 
 .divtop a:hover {
@@ -137,7 +137,7 @@ a {
 .btlogin:hover {
     color: #DD4A48;
     cursor: pointer;
-    text-decoration:none;
+    text-decoration: none;
     border: solid;
     border-color: #DD4A48;
     transition-duration: 2s;
@@ -157,19 +157,20 @@ a {
     height: 3rem;
     font-size: 16px;
     border-radius: 10px;
-    
+
 }
 
 /*FINAL CSS HEADER*/
 
 /*INÍCIO CSS BODY PAGINA HOME*/
 
-.procurados{
+.procurados {
     font-size: 50px;
     font-weight: bold;
     margin-top: 50px;
 
 }
+
 .vitrines {
     display: flex;
     align-items: center;
@@ -257,7 +258,7 @@ a {
 
 .mapa:hover {
     opacity: 100%;
-    
+
 
 }
 
@@ -345,10 +346,10 @@ a {
     .mapa {
         max-width: 90%;
         align-self: center;
-        
+
     }
 
-    .wpp{
+    .wpp {
         display: none;
     }
 
@@ -360,7 +361,7 @@ a {
 
 /*INÍCIO CSS PÁGINA PRODUTOS*/
 /*INÍCIO CSS BODY PRODUTOS*/
-.destaque{
+.destaque {
     margin: 40px;
     color: black;
     justify-content: center;
@@ -1003,7 +1004,7 @@ button .btentre {
 button .btentre {
     width: 100px;
     border: none;
-    color:  #DD4A48;
+    color: #DD4A48;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1015,7 +1016,7 @@ button .btentre {
 
 .btentre:hover {
     color: #C0D8C0;
-    background-color:  #DD4A48;
+    background-color: #DD4A48;
 
 }
 
@@ -1025,46 +1026,49 @@ button .btentre {
 /* INICIO ESTILO CARRINHO */
 /* INICIO PRODUTRO DENTRO DO CARRINHO*/
 
-.tittle_carrinho{
+.tittle_carrinho {
     text-align: center;
     color: #DD4A48;
 }
 
-.div_produto_carrinho_1{
-    
+.div_produto_carrinho_1 {
+
     display: flex;
     flex-direction: row;
     height: 20vh;
     align-items: center;
     background-color: #C0D8C0;
-    
+
 }
+
 .img_produto_item_1 {
     padding: 0.25rem;
     background-color: #fff;
     border: 3px solid #DD4A48;
     border-radius: 3rem;
     max-width: 100%;
-    height: 100%;    
+    height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 150px;     
+    margin-left: 150px;
 }
-.link_img_01{
+
+.link_img_01 {
     width: 16%;
 }
 
-.div_descricao_produto{
-  
+.div_descricao_produto {
+
     justify-content: center;
     align-items: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-left: 211px;
 }
-.div_input_button{
-    
+
+.div_input_button {
+
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1077,7 +1081,7 @@ button .btentre {
 
 
 
-.titulo{
+.titulo {
     text-align: center;
     color: black;
     margin-bottom: 30px;
@@ -1145,7 +1149,7 @@ button .btentre {
 
 /* INICIO DO CSS SERVICOS */
 
-.servicos{
+.servicos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1155,16 +1159,46 @@ button .btentre {
 }
 
 .cards1{
-    display: flex;
-    height: 800px;
-    width: 800px;
     margin-top: 100px;
-    
-    
 }
 
 .cards2{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
     display: flex;
-    height: 800px;
-    width: 800px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+ .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0;
+    background-color: #C0D8C0;
+    
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4A48;
+    width: 300px;
+    border: none;
+}
+
+.btn-primary :hover{
+    background-color: #C0D8C0;
 }

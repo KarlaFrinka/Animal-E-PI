@@ -1,47 +1,68 @@
-<!-- <--- começo do header ---> 
-<%-include("./partials/header")%>
-          <!-- fim do header  -->
-          <div class="servicos">Serviços oferecidos para seu pet!</div>
-          <!-- começo dos cards  -->
-          <div class="cards1">
-            <div class="card">
-              <img class="img" src="/images/banho.png">
-              <div class="cardtexto">
-              <h2>Banho & Tosa</h2>
-              <p>Banhe seu pet com uma equipe que irá tratar o seu bichinho como se fossem reis e rainhas. Banhos com água quente, shampoo e condicionador além, é claro do nosso Hair stylist para dar a seu pet uma tosa do jeito que desejar! </p>
-              <button class="btcontratar">Contratar</button>
-            </div>
-              </div>
-            <div class="card">
-              <img class="img" src="/images/hotel.png">
-              <div class="cardtexto">
-              <h2>Hotel</h2>
-              <p>Procurando um lugar para seu pet ficar seguro? Temos um hotel aqui mesmo na Animal-E, ele vai se divertir muito e será muito bem cuidado!</p>
-              <button class="btcontratar">Contratar</button>
-            </div>
-              </div>
+<!-- <--- começo do header --->
+<%-include("./partials/header.ejs")%>
+  <!-- fim do header  -->
+
+
+  <h1 class="servicos">Serviços disponíveis</h1>
+
+
+  <div class="cards1">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img class="img" src="images/adestramento.png" alt="Adestramento">
+            <h5 class="card-title">Adestramento</h5>
+            <p class="card-text">Temos um serviço de adestramento com profissionais capazes e formados para ensinar seu
+              pet boas maneiras com muito carinho.</p>
+            <a href="#" class="btn btn-primary">Contratar</a>
           </div>
-            <div class="cards2" >
-              <div class="card"> 
-              <img class="img" src="/images/adestramento.png">
-              <div class="cardtexto">
-              <h2 >Adestramento</h2>
-              <p>Temos um serviço de adestramento com profissionais capazes e formados para ensinar seu pet boas maneiras com muito carinho.</p>
-              <button class="btcontratar">Contratar</button>
-            </div> 
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/pettaxi.png" alt="">
+            <h5 class="card-title">Pet Táxi</h5>
+            <p class="card-text">Se não pode trazer seu pet até nós, nós o buscamos sem problemas! Contrate nosso
+              serviço de pet táxi para trazer o seu pet e leva-lo de volta para o seu lar em segurança.</p>
+            <a href="#" class="btn btn-primary">Contratar</a>
           </div>
-          <div class="card">
-            <img class="img" src="/images/pettaxi.png">
-            <div class="cardtexto">
-              <h2>Pet Táxi</h2>
-              <p>Se não pode trazer seu pet até nós, nós o buscamos sem problemas! Contrate nosso serviço de pet táxi para trazer o seu pet e leva-lo de volta para o seu lar em segurança.</p>
-              <button class="btcontratar">Contratar</button>
-            </div>
-          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards2">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img class="img" src="/images/banho.png" alt="Adestramento">
+            <h5 class="card-title">Banho & Tosa</h5>
+            <p class="card-text">Banhe seu pet com uma equipe que irá tratar o seu bichinho como se fossem reis e
+              rainhas. Banhos com água quente, shampoo e condicionador além, é claro do nosso Hair stylist para dar a
+              seu pet uma tosa do jeito que desejar! </p>
+            <a href="#" class="btn btn-primary">Contratar</a>
           </div>
-          <!-- fim dos cards  -->
-          <!-- começo do footer  -->
-          <%-include("./partials/footer")%>
-        <!-- fim do footer  -->
-</body>
-</html>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img class="img" src="/images/hotel.png" alt="Adestramento">
+            <h5 class="card-title">Hotel</h5>
+            <p class="card-text">Procurando um lugar para seu pet ficar seguro? Temos um hotel aqui mesmo na Animal-E,
+              ele vai se divertir muito e será muito bem cuidado!</p>
+            <a href="#" class="btn btn-primary">Contratar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- começo do footer  -->
+  <%-include("./partials/footer")%>
+    <!-- fim do footer  -->
+    </body>
+
+    </html>
