@@ -462,8 +462,6 @@ a {
 /*FINAL CSS PAGINA PRODUTOS*/
 
 /*INÍCIO CSS PÁGINA PRODUTO INTERNO*/
-/*INÍCIO CSS BODY PRODUTO INTERNO*/
-/*INÍCIO PRODUTO PRINCIPAL EM DESTAQUE - TOPO*/
 /* Google Fonts Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -833,194 +831,46 @@ input[type="radio"] {
         max-width: 100%;
     }
 }
-
-
-
-/*FINAL CSS BODY PRODUTO INTERNO*/
 /*FINAL CSS PÁGINA PRODUTO INTERNO*/
 
 
 
 /*INÍCIO CSS PÁGINA CADASTRO USUARIO*/
-/*INÍCIO CSS BODY CADASTRO USUÁRIO*/
 
-.form .login-signup .forms-signup {
+.cadastro{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    text-align: center;
-}
-
-
-
-.forms-signup {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-    background: #C0D8C0;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.forms-signup .forms {
-    display: flex;
-
     align-items: center;
-    height: 440px;
-    width: 200%;
-    transition: height 0.2s ease;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
-
-.forms-signup .form {
-    width: 100%;
-    padding: 30px;
-    background-color: #fff;
-    transition: margin-left 0.18s ease;
-}
-
-.container.active .login {
-    margin-left: -50%;
-    opacity: 0;
-    transition: margin-left 0.18s ease, opacity 0.15s ease;
-}
-
-.container .signup {
-    opacity: 0;
-    transition: opacity 0.09s ease;
-}
-
-.container.active .signup {
-    opacity: 1;
-    transition: opacity 0.2s ease;
-}
-
-.container.active .forms {
-    height: 600px;
-}
-
-.container .form .title {
-    position: relative;
-    font-size: 27px;
-    font-weight: 600;
-}
-
-.form .title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background-color: #DD4A48;
-    border-radius: 25px;
-}
-
-.form .input-field {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.input-field input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 0 35px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-bottom: 2px solid #ccc;
-    border-top: 2px solid transparent;
-    transition: all 0.2s ease;
-}
-
-.input-field input:is(:focus, :valid) {
-    border-bottom-color: #DD4A48;
-}
-
-.input-field i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 23px;
-    transition: all 0.2s ease;
-}
-
-.input-field input:is(:focus, :valid)~i {
-    color: #DD4A48;
-}
-
-.input-field i.icon {
-    left: 0;
-}
-
-.input-field i.showHidePw {
-    right: 0;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.form .checkbox-text {
+.input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.checkbox-text .checkbox-content {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-content input {
-    margin: 0 8px -2px 4px;
-    accent-color: #DD4A48;
-}
-
-.form .text {
-    color: #333;
-    font-size: 14px;
-}
-
-.form a.text {
-    color: #DD4A48;
-    text-decoration: none;
-}
-
-.form a:hover {
-    text-decoration: underline;
-}
-
-button .btentre {
-    margin-top: 35px;
-}
-
-button .btentre {
-    width: 100px;
-    border: none;
-    color: #DD4A48;
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 6px;
+    justify-content: space-around;
     background-color: #C0D8C0;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.btentre:hover {
-    color: #C0D8C0;
+.btcadastro{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 850px;
     background-color: #DD4A48;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
 
 }
 
-/*FINAL CSS BODY CADASTRO USUÁRIO*/
+
+
 /*FINAL CSS PÁGINA CADASTRO USUÁRIO*/
 
 /* INICIO ESTILO CARRINHO */

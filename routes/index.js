@@ -30,7 +30,7 @@ router.get('/contatos', servicosController.contatos);
 
 router.get('/doe', servicosController.doe);
 
-router.post('/userCadastro', updloadFile.single('avatar'), servicosController.register);
+//router.post('/userCadastro', updloadFile.single('avatar'), servicosController.register);
 
 
 
