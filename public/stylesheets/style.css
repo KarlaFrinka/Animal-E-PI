@@ -41,6 +41,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+/*FIM DA PÁGINA HOME*
+
 
 /*INÍCIO CSS HEADER*/
 .topo {
@@ -159,8 +161,8 @@ a {
     border-radius: 10px;
 
 }
-
 /*FINAL CSS HEADER*/
+
 
 /*INÍCIO CSS BODY PAGINA HOME*/
 
@@ -305,8 +307,8 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 /*FINAL CSS FOOTER */
+
 /*INÍCIO CSS RESPONSIVIDADE HEADER, BODY E FOOTER */
 @media (max-width: 800px) {
     .topo {
@@ -354,25 +356,22 @@ a {
     }
 
 }
-
-
 /*FINAL CSS RESPONSIVIDADE HEADER, BODY E FOOTER */
-/*FINAL CSS PAGINA HOME*/
+/*FINAL DA PAGINA HOME*/
 
-/*INÍCIO CSS PÁGINA PRODUTOS*/
-/*INÍCIO CSS BODY PRODUTOS*/
+/*INÍCIO DA PÁGINA PRODUTOS*/
 .destaque {
-    margin: 40px;
     color: black;
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
-.container-produtos {
-    width: 100%;
-    overflow: hidden;
-    padding: 0px 0;
-    box-sizing: border-box;
+.img {
+    width: 100px;
 }
 
 .container-produtos .main-card {
@@ -383,9 +382,7 @@ a {
     align-content: center;
     width: 100%;
     transition: 1s;
-    box-sizing: border-box;
 }
-
 .container-produtos .main-card .cards {
     width: 70%;
     display: flex;
@@ -395,73 +392,42 @@ a {
     align-content: center;
     box-sizing: border-box;
 }
-
-.container-produtos .main-card .cards .card {
-    width: 270px;
-    margin-right: 1px;
-    background: #C0D8C0;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.4s ease;
-}
-
 .container-produtos .main-card .cards .card:hover {
     transform: translateY(-15px);
 }
-
-.container-produtos .cards .card .content {
-    width: 100%;
+h1.quem-viu {
+    color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
-/* .container-produtos .cards .card .content .img {
-    height: 200px;
-    width: 200px;
-    border-radius: 15%;
-    padding: 3px;
-    margin-bottom: 14px;
-} */
-
-/* .container-produtos .card .content .img img {
-    height: 100%;
-    width: 100%;
-} */
-
-.container-produtos .card .content .name {
-    font-size: 20px;
-    font-weight: 500;
-}
-
 .container-produtos .card .content .job {
     font-size: 20px;
     color: black;
 }
-
 .container-produtos .button {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px;
 }
-
-.container-produtos .button label {
-    height: 15px;
-    width: 15px;
-    border-radius: 20px;
-    margin: 0 4px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-/*FINAL CSS BODY PRODUTOS*/
+ .btpreco {
+    margin-top: 50px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #DD4A48;
+    border-radius: 10px;
+    font-weight: bold;
+ }
 /*FINAL CSS PAGINA PRODUTOS*/
 
-/*INÍCIO CSS PÁGINA PRODUTO INTERNO*/
+
+/*INÍCIO DA PÁGINA PRODUTO INTERNO*/
 /* Google Fonts Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -560,6 +526,7 @@ a {
     align-items: center;
     align-self: center;
     margin-top: 10px;
+    color: black;
 }
 
 .color-price .color-option .color {
@@ -616,7 +583,7 @@ a {
 .price .price_num {
     font-size: 40px;
     font-weight: 700;
-    color: #DD4A48;
+    color: black;
 
 }
 
@@ -694,7 +661,7 @@ a {
         width: 100%;
     }
 }
-
+/* FIM DA PÁGINA*/ 
 
 /*INÍCIO CSS CARD SLIDE PRODUTO INTERNO*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -834,9 +801,7 @@ input[type="radio"] {
 /*FINAL CSS PÁGINA PRODUTO INTERNO*/
 
 
-
 /*INÍCIO CSS PÁGINA CADASTRO USUARIO*/
-
 .cadastro{
     display: flex;
     justify-content: center;
@@ -868,14 +833,12 @@ input[type="radio"] {
     font-weight: bold;
 
 }
-
-
-
 /*FINAL CSS PÁGINA CADASTRO USUÁRIO*/
 
-/* INICIO ESTILO CARRINHO */
-/* INICIO PRODUTRO DENTRO DO CARRINHO*/
 
+
+
+/* INICIO PRODUTRO DENTRO DO CARRINHO*/
 .tittle_carrinho {
     text-align: center;
     color: #DD4A48;
@@ -894,7 +857,7 @@ input[type="radio"] {
 .img_produto_item_1 {
     padding: 0.25rem;
     background-color: #fff;
-    border: 3px solid #DD4A48;
+    border: none;
     border-radius: 3rem;
     max-width: 100%;
     height: 100%;
@@ -924,13 +887,10 @@ input[type="radio"] {
     display: flex;
     margin-left: 40px;
 }
-
-
 /* FINAL CSS PRODUTO NO CARRINHO*/
+
+
 /* INICIO CSS OUTROS PRODUTOS */
-
-
-
 .titulo {
     text-align: center;
     color: black;
@@ -963,7 +923,7 @@ input[type="radio"] {
     padding: 10px;
     margin: 40px;
     background-color: #C0D8C0;
-    border-color: #DD4A48;
+    border: none;
 }
 
 .vitrine .img {
@@ -996,9 +956,9 @@ input[type="radio"] {
     margin-top: 5px;
     border: none;
 }
+/* FIM DA PÁGINA PRODUTOS*/
 
-/* INICIO DO CSS SERVICOS */
-
+/* INICIO DA PÁGINA SERVICOS */
 .servicos {
     display: flex;
     justify-content: center;
@@ -1051,4 +1011,65 @@ input[type="radio"] {
 
 .btn-primary :hover{
     background-color: #C0D8C0;
+}
+/*FIM PÁGINA SERVICOS*/
+
+
+/*INICIO PÁGINA DOE*/
+.instituto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.luisa {
+    width: 1000px;
+    display: flex;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+.contexto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*FIM DA PÁGINA DOE*/
+
+/*INICIO DA PÁGINA CONTATOS*/
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.enviar {
+    display: flex;
+    margin-left: 1500px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4A48;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.form-controll {
+    height: 1000px;
+    width: 100px;
 }

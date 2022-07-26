@@ -27,7 +27,7 @@ const userController = {
 
     edit: function (req, res) {
         const { idClientes } = req.params;
-        const Clientes = await db.Movie.findByPk(idClientes);
+        const Clientes = await db.Clientes.findByPk(idClientes);
         res.render("loginEdicao", {
             
         })  
