@@ -9,6 +9,7 @@ const userCadLogRouter = require('./routes/index');
 const userLogadoRouter = require('./routes/index');
 const produtoRouter = require('./routes/index');
 const produtoInternoRouter = require('./routes/index');
+const logMiddleware = require('./middlewares/logSite');
 
 var app = express();
 
@@ -18,9 +19,10 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-//app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use('/index', userCadLogRouter);

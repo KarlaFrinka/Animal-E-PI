@@ -30,13 +30,13 @@ router.get('/contatos', servicosController.contatos);
 
 router.get('/doe', servicosController.doe);
 
-//router.post('/userCadastro', updloadFile.single('avatar'), servicosController.register);
+router.post('/userCadastro', servicosController.register);
 
 
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
-        cb(null, './public/images/avatars');    
+        cb(null, './images/avatars');    
     },
     filename: function (req, file, cb) {
         cb(null,
@@ -44,6 +44,7 @@ const storage = multer.diskStorage({
     }
 });
 const updloadFile = multer ({ storage});
+
 
 
 module.exports = router;
