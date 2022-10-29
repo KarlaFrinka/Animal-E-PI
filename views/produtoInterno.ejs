@@ -1,0 +1,171 @@
+<%-include("./partials/header")%>
+
+    <div class="product-card">
+        <div class="lado-esquerdo">
+            <div class="main-images">
+                <img id="blue" class="blue active" src="images/blue.png" alt="blue">
+                <img id="pink" class="pink" src="images/pink.png" alt="pink">
+                <img id="red" class="red" src="images/red.png" alt="red">
+            </div>
+
+            <div class="color-price">
+                <div class="color-option">
+                    <span class="color">Cores:</span>
+                    <div class="circles">
+                        <span class="circle blue active" id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle red " id="red"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lado-direito">
+            <div class="produto-detalhes">
+                <span class="produto_nome">COMEDOURO DUPLO</span>
+                <p>Comedouro Duplo para PET  <br>Coloque água e ração no mesmo pote,
+                    <br>mantendo seu PET sempre hidratado e alimentado.
+                </p>
+            </div>
+            <div class="price">
+                <span class="price_num">R$30,00</span>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let circle = document.querySelector(".color-option");
+
+        circle.addEventListener("click", (e) => {
+            let target = e.target;
+            if (target.classList.contains("circle")) {
+                circle.querySelector(".active").classList.remove("active");
+                target.classList.add("active");
+                document.querySelector(".main-images .active").classList.remove("active");
+                document.querySelector(`.main-images .${target.id}`).classList.add("active");
+            }
+        });
+    </script>
+    <!-- começo da vritine -->
+
+    <body class="produto-interno">
+        <h1 class="quem-viu">Quem viu também gostou de:</h1>
+        <div class="container">
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="two">
+            <div class="main-card">
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/caoLouis.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Conjunto Paris</div>
+                                <div class="descricao">Todos os tamanhos, <br>a partir de:</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/mochilaGato.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Mochila Vai pra Onde?</div>
+                                <div class="descricao">Mochila para Gatos - Tamanho único!</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/caoFloquinho.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Kit de Brinquedos</div>
+                                <div class="descricao">Acompanha brinquedo e roupinha tamanho PP</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/flouffy-PJTfOzSo8fQ-unsplash.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Conjunto Sport</div>
+                                <div class="descricao">Conjunto Polo & Jeans <br>Todos os tamanhos</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/bebedouro.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Bebedouro - Pássaros</div>
+                                <div class="descricao">Para pássaros tamanho médio - 300ml - 1 unidade</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/racao.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Ração para Cachorros</div>
+                                <div class="descricao">Para cães adultos - 1,5 a 5 anos - Sabor frango - 15kg</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/racaoParaGatos.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Ração para Gatos</div>
+                                <div class="descricao">Para gatos adultos - 1,5 a 5 anos - Sabor frango - 5kg</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="/images/casinhacoelho.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Viveiro com tela</div>
+                                <div class="descricao">Para mini coelhos e porquinhos da índia</div>
+                                <button class="btpreco">Preço</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <label for="one" class=" active one"></label>
+                <label for="two" class="two"></label>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+    <!-- Fim das vitrines -->
+    <%-include("./partials/footer")%>

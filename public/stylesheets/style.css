@@ -1,0 +1,1075 @@
+/*INÍCIO CSS PAGINA HOME*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: white;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.wpp:hover {
+    color: green;
+    transition: 5s ease-in-out;
+    min-width: 120px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 30px 25px;
+    transition: 10s;
+
+}
+
+.wpp {
+    height: 80px;
+    width: 80px;
+    color: green;
+    width: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1;
+}
+
+.projeto {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*FIM DA PÁGINA HOME*
+
+
+/*INÍCIO CSS HEADER*/
+.topo {
+    background-color: #F5EEDC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.topo .logotop {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.topo .barrapesquisa {
+    margin-right: 10px;
+    width: 600px;
+    height: 3rem;
+    background-color: #ECB390;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.barrapesquisa:focus {
+    outline: 0;
+}
+
+.btbuscar:hover {
+    cursor: pointer;
+}
+
+.btbuscar {
+    background-color: #ECB390;
+    border: none;
+    height: 3rem;
+    width: 4rem;
+    border-radius: 10px;
+}
+
+.carrinho {
+    height: 150px;
+    width: 80px;
+}
+
+.divtop {
+    border: none;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-column: 100px 100px 100px 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 10px;
+    height: 4rem;
+    box-sizing: border-box;
+    background-color: #ECB390;
+}
+
+.divtop a {
+    color: black;
+
+}
+
+.divtop a:hover {
+    color: #DD4A48;
+    transition: color;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.btlogin:hover {
+    color: #DD4A48;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid;
+    border-color: #DD4A48;
+    transition-duration: 2s;
+    transition-delay: 0.5ms;
+    transition-property: border;
+    font-weight: bold;
+}
+
+.topo>.btlogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #C0D8C0;
+    width: 9rem;
+    height: 3rem;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+/*FINAL CSS HEADER*/
+
+
+/*INÍCIO CSS BODY PAGINA HOME*/
+
+.procurados {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+
+.vitrines {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    transition: all 0.3 ease-out;
+    margin-top: 50px;
+}
+
+.vitrine:hover {
+    transform: translateY(-5px);
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0;
+    padding: 10px;
+    margin: 40px;
+    background-color: #C0D8C0;
+    border-color: #DD4A48;
+}
+
+.vitrine .img {
+    max-width: 300px;
+    max-height: 301px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.vitrine .informacoes {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.vitrine .btpreco:hover {
+    background-color: #DD4A48;
+    color: white;
+    cursor: pointer;
+}
+
+.vitrine .btpreco {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    border: none;
+}
+
+/*FINAL  CSS BODY PAGINA HOME*/
+
+/*INÍCIO CSS FOOTER */
+.footer {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #F5EEDC;
+    top: 100px;
+    padding-left: 0px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.logosociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa:hover {
+    opacity: 100%;
+
+
+}
+
+.mapa {
+    opacity: 80%;
+}
+
+
+.logofoot {
+    height: 200px;
+    width: 200px;
+}
+
+.redessociais {
+    margin-bottom: 10px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 90%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.footer .textos {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.footer .pagamentos {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 30px;
+}
+
+.footer .bandeiras {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*FINAL CSS FOOTER */
+
+/*INÍCIO CSS RESPONSIVIDADE HEADER, BODY E FOOTER */
+@media (max-width: 800px) {
+    .topo {
+        flex-direction: column;
+        margin: none;
+        padding: none;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .pesquisa {
+        max-width: 80%;
+    }
+
+    .divtop {
+        display: block;
+        margin-left: 260px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .vitrines {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .footer>.textos {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .mapa {
+        max-width: 90%;
+        align-self: center;
+
+    }
+
+    .wpp {
+        display: none;
+    }
+
+}
+/*FINAL CSS RESPONSIVIDADE HEADER, BODY E FOOTER */
+/*FINAL DA PAGINA HOME*/
+
+/*INÍCIO DA PÁGINA PRODUTOS*/
+.destaque {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.img {
+    width: 100px;
+}
+
+.container-produtos .main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    transition: 1s;
+}
+.container-produtos .main-card .cards {
+    width: 70%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+.container-produtos .main-card .cards .card:hover {
+    transform: translateY(-15px);
+}
+h1.quem-viu {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container-produtos .card .content .job {
+    font-size: 20px;
+    color: black;
+}
+.container-produtos .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+ .btpreco {
+    margin-top: 50px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #DD4A48;
+    border-radius: 10px;
+    font-weight: bold;
+ }
+/*FINAL CSS PAGINA PRODUTOS*/
+
+
+/*INÍCIO DA PÁGINA PRODUTO INTERNO*/
+/* Google Fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.product-card {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin: 40px;
+    width: 70%;
+    height: 500px;
+    border-radius: 25px;
+    padding: 30px;
+    background: #C0D8C0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.lado-direito {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #F5EEDC;
+    border: 3px solid #DD4A48;
+    border-radius: 15px;
+}
+
+.product-card .main-images {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.product-card .main-images img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    top: 30px;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-card .main-images img.active {
+    opacity: 1;
+}
+
+.product-card .produto-detalhes .produto_nome {
+    font-size: 40px;
+    font-weight: 500;
+    color: #161616;
+    margin-left: 20px;
+}
+
+.product-card .produto-detalhes p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.product-card .color-price .color-option {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 395px;
+
+}
+
+.color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.color-price .color-option .color {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+}
+
+.color-option .circles {
+    display: flex;
+}
+
+.color-option .circles .circle {
+    height: 25px;
+    width: 25px;
+    background: #0071C7;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.color-option .circles .circle.blue.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #0071C7;
+}
+
+.color-option .circles .circle.pink {
+    background: #FA1795;
+}
+
+.color-option .circles .circle.pink.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #FA1795;
+}
+
+.color-option .circles .circle.red {
+    background: red;
+}
+
+.color-option .circles .circle.red.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px red;
+}
+
+.color-price .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price .price_num {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+
+}
+
+.product-card .button {
+    position: relative;
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    top: 30px;
+}
+
+.product-card .button .button-layer {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    background-image: linear-gradient(135deg, #ECB390, #DD4A48);
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.product-card .button:hover .button-layer {
+    left: 0;
+}
+
+.product-card .button button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .product-card {
+        position: relative;
+        display: flex;
+        width: 90%;
+        height: 1000px;
+        box-sizing: border-box;
+
+    }
+
+    .lado-esquerdo {
+        position: relative;
+        flex-direction: column;
+        width: 95%;
+        top: 300px;
+    }
+
+    .lado-direito {
+        position: relative;
+        flex-direction: column;
+        width: 95%;
+        height: 550px;
+        bottom: 300px;
+    }
+
+    .produto-detalhes {
+        text-align: center;
+    }
+
+    .product-card .color-price .color-option {
+        top: 250px;
+    }
+
+    .product-card .main-images img {
+        width: 100%;
+    }
+}
+/* FIM DA PÁGINA*/ 
+
+/*INÍCIO CSS CARD SLIDE PRODUTO INTERNO*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.quem-viu {
+    text-align: center;
+    color: #DD4A48;
+}
+
+.container {
+    max-width: 80%;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.container .main-card {
+    display: flex;
+    justify-content: center;
+    width: 200%;
+    transition: 1s;
+}
+
+#two:checked~.main-card {
+    margin-left: -100%;
+}
+
+.container .main-card .cards {
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.main-card .cards .card {
+    width: 290px;
+    margin-right: 1px;
+    background: #C0D8C0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover {
+    transform: translateY(-15px);
+}
+
+.cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card .content .img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    padding: 3px;
+    background: #FF676D;
+    margin-bottom: 14px;
+}
+
+.card .content .img img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 15%;
+    object-fit: cover;
+}
+
+.card .content .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .content .job {
+    font-size: 20px;
+    color: #FF676D;
+}
+
+.container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #DD4A48;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+#one:checked~.button .one {
+    width: 35px;
+}
+
+#one:checked~.button .two {
+    width: 15px;
+}
+
+#two:checked~.button .one {
+    width: 15px;
+}
+
+#two:checked~.button .two {
+    width: 35px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .main-card .cards .card {
+        margin: 20px 0 10px 0;
+        width: calc(100% / 2 - 10px);
+    }
+
+    .container .main-card {
+        max-width: 100%;
+    }
+}
+/*FINAL CSS PÁGINA PRODUTO INTERNO*/
+
+
+/*INÍCIO CSS PÁGINA CADASTRO USUARIO*/
+.cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C0D8C0;
+}
+
+.btcadastro{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 850px;
+    background-color: #DD4A48;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+/*FINAL CSS PÁGINA CADASTRO USUÁRIO*/
+
+
+
+
+/* INICIO PRODUTRO DENTRO DO CARRINHO*/
+.tittle_carrinho {
+    text-align: center;
+    color: #DD4A48;
+}
+
+.div_produto_carrinho_1 {
+
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+    background-color: #C0D8C0;
+
+}
+
+.img_produto_item_1 {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 3rem;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 150px;
+}
+
+.link_img_01 {
+    width: 16%;
+}
+
+.div_descricao_produto {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 211px;
+}
+
+.div_input_button {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 40px;
+}
+/* FINAL CSS PRODUTO NO CARRINHO*/
+
+
+/* INICIO CSS OUTROS PRODUTOS */
+.titulo {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.vitrines {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    transition: all 0.3 ease-out;
+    margin-top: 50px;
+}
+
+.vitrine:hover {
+    transform: translateY(-5px);
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0;
+    padding: 10px;
+    margin: 40px;
+    background-color: #C0D8C0;
+    border: none;
+}
+
+.vitrine .img {
+    max-width: 300px;
+    max-height: 301px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.vitrine .informacoes {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.vitrine .btpreco:hover {
+    background-color: #DD4A48;
+    color: white;
+    cursor: pointer;
+}
+
+.vitrine .btpreco {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    border: none;
+}
+/* FIM DA PÁGINA PRODUTOS*/
+
+/* INICIO DA PÁGINA SERVICOS */
+.servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.cards1{
+    margin-top: 100px;
+}
+
+.cards2{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+ .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0;
+    background-color: #C0D8C0;
+    
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4A48;
+    width: 300px;
+    border: none;
+}
+
+.btn-primary :hover{
+    background-color: #C0D8C0;
+}
+/*FIM PÁGINA SERVICOS*/
+
+
+/*INICIO PÁGINA DOE*/
+.instituto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.luisa {
+    width: 1000px;
+    display: flex;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+.contexto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*FIM DA PÁGINA DOE*/
+
+/*INICIO DA PÁGINA CONTATOS*/
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.enviar {
+    display: flex;
+    margin-left: 1500px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4A48;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.form-controll {
+    height: 1000px;
+    width: 100px;
+}
